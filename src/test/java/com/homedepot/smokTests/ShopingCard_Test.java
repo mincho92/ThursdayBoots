@@ -59,6 +59,7 @@ public class ShopingCard_Test extends Base {
         addedToCard_popUp.ViewCard();
         shopingCardPage.saveToFavotites1();
         shopingCardPage.createNewFavoritesList();
+
         String actual = library.find("Nice choice! We've saved this item to your favorites mssg",By.cssSelector(".alert-inline__message")).getText();
         Assert.assertEquals("Nice choice! We've saved this item to your favorites.",actual);
     }
